@@ -2297,6 +2297,9 @@ hr {
   .whsdd{
     width: 100%;
   }
+  .images-logo {
+    width: 31% !important;
+}
 }
 @media (min-width: 992px) {
   .cs_grid_1 .cs_grid_item:nth-child(2), .cs_grid_1 .cs_grid_item:nth-child(6) {
@@ -2976,16 +2979,10 @@ hr {
   position: fixed !important;
   width: 100%;
   z-index: 999;
+  background: #3fd0d4;
 }
 
-.cs_gescout_sticky {
-  position: fixed !important;
-  top: -110px;
-  opacity: 0;
-  -webkit-transition: all 0.4s ease;
-  transition: all 0.4s ease;
-  background-color: #0064ff85;
-}
+
 
 .cs_gescout_show {
   top: 0 !important;
@@ -3528,7 +3525,7 @@ hr {
     position: fixed;
     width: 100vw;
     left: -100vw;
-    background-color: var(--primary);
+    background-color: #3fd0d4;
     color: var(--white);
     padding: 10px 0;
     top: 0;
