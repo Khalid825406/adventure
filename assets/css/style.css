@@ -2291,6 +2291,12 @@ hr {
   .cs_grid_1 {
     grid-template-columns: repeat(1, 1fr);
   }
+  .my-flex{
+    display: block;
+  }
+  .whsdd{
+    width: 100%;
+  }
 }
 @media (min-width: 992px) {
   .cs_grid_1 .cs_grid_item:nth-child(2), .cs_grid_1 .cs_grid_item:nth-child(6) {
