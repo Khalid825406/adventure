@@ -33,9 +33,11 @@
             margin-bottom: 40px;
             background-color: #212529;
         }
-        .text-center h3{
+
+        .text-center h3 {
             color: #fff;
         }
+
         .section-title {
             font-size: 28px;
             font-style: italic;
@@ -99,6 +101,43 @@
             border-radius: 8px;
             display: inline-block;
         }
+
+        @media only screen and (max-width: 600px) {
+            .package-container {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                background: rgba(255, 255, 255, 0.9);
+                padding: 0px !important;
+                border-radius: 12px;
+                box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+                margin-bottom: 40px;
+                flex-direction: column;
+            }
+
+            .text-center {
+                text-align: center;
+                padding: 70px 0;
+                margin-top: 80px;
+                margin-bottom: 40px;
+                background-color: #212529;
+            }
+            .package-container .content .price {
+            margin-top: 10px;
+        }
+
+        .package-container .image {
+            width: 100%;
+            display: flex;
+        }
+
+        .package-container .content {
+            width: 100%;
+            color: #333;
+        }
+        }
+
+       
     </style>
 </head>
 
