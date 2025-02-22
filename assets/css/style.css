@@ -2981,8 +2981,22 @@ hr {
   z-index: 999;
   background: #3fd0d4ba;
 }
-
-
+.cs_card_action{
+  display: flex !important;
+  gap: 5px !important;
+}
+.view{
+  padding: 9px 13px;
+  background-color: #3fd0d4;
+  border: none;
+  outline: none;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 13px;
+}
+.view:hover{
+  color: #fff !important;
+}
 
 .cs_gescout_show {
   top: 0 !important;
@@ -6694,6 +6708,10 @@ hr {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+}
+.cs_card_content {
+  opacity: 1 !important;
+  visibility: visible !important;
 }
 .cs_card_4_list > .cs_card.cs_style_4 {
   -webkit-box-flex: 1;
