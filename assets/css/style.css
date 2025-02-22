@@ -6510,7 +6510,7 @@ hr {
   background: linear-gradient(0deg, rgba(16, 32, 57, 0.8) 13.54%, rgba(63, 208, 212, 0) 100%);
   left: 0;
   top: 0;
-  opacity: 0;
+  opacity: 1;
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
 }
@@ -6712,6 +6712,11 @@ hr {
 .cs_card_content {
   opacity: 1 !important;
   visibility: visible !important;
+}
+.cs_card {
+  opacity: 1 !important;
+  visibility: visible !important;
+  display: block !important;
 }
 .cs_card_4_list > .cs_card.cs_style_4 {
   -webkit-box-flex: 1;
