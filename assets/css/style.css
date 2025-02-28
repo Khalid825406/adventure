@@ -3241,7 +3241,6 @@ hr {
         -ms-flex-align: center;
             align-items: center;
     height: 100%;
-    width: 100%;
     max-width: calc(100% - 510px);
   }
   .cs_site_header.cs_style_1 .cs_main_header_left {
