@@ -75,13 +75,12 @@
                     </div>
                     <div class="content">
                         <div class="price">₹2499</div>
-                        <h2>Bonfire</h2>
+                        <h2 data-product="Bonfire">Bonfire</h2>
                         <p>Bonfire Night can be a hard celebration to explain. It’s also sometimes called Guy Fawkes Night – but who was Guy Fawkes and what’s it all about? Well, Guy Fawkes tried to blow up London’s Houses of Parliament in 1605 because he wanted to kill King James I. So British people celebrate that night, 5 November, with bonfire parties, including huge bonfires in public parks, and firework displays.</p>
                         <p>The celebrations have remained mostly the same for hundreds of years, although people nowadays don’t go to church as part of the day. </p>
                         <div>
                             <a class="bookbtn" href="./contact.html">Book Now</a>
-                            <a href="https://wa.me/+918909143913?text=Hello%Camping%20in%20your%20services"
-                                class="whatbtn"><i class="fa-brands fa-whatsapp"></i>+918909143913</a>
+                            <a  href="#" class="whatbtn whatsapp-btn"><i class="fa-brands fa-whatsapp"></i>+918909143913</a>
                         </div>
                     </div>
                 </div>
@@ -166,7 +165,29 @@
               </div>
         </div>
     </footer>
-
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          document.querySelectorAll(".whatsapp-btn").forEach(button => {
+            button.addEventListener("click", function (event) {
+              event.preventDefault();
+      
+              let phoneNumber = "918909143913";
+      
+            
+              let productElement = document.querySelector("h2[data-product]");
+              let productName = productElement ? productElement.getAttribute("data-product") : "your product";
+      
+              let message = `Hello, I am interested in your product: ${productName}. Can you provide more details?`;
+              let encodedMessage = encodeURIComponent(message); 
+      
+              let whatsappLink = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodedMessage}`;
+      
+             
+              window.open(whatsappLink, "_blank");
+            });
+          });
+        });
+      </script>
     <script src="assets/js/jquery-3.6.0.min.js"></script>
     <script src="assets/js/wow.min.js"></script>
     <script src="assets/js/jquery.slick.min.js"></script>

@@ -7333,3 +7333,14 @@ hr {
 .whatbtn i {
   margin-right: 5px;
 }
+.predece{
+    background: #cccccc2b;
+    color: #000;
+    padding: 10px 15px;
+    border-radius: 8px;
+    display: inline-block;
+    width: 100%;
+}
+.predece p{
+  margin-bottom: 5px !important;
+}
